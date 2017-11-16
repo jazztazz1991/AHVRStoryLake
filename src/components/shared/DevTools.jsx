@@ -7,7 +7,7 @@ const DevTools = createDevTools( // eslint-disable-line
   <DockMonitor
     toggleVisibilityKey="ctrl-h"
     changePositionKey="ctrl-q"
-    defaultIsVisible
+    defaultIsVisible={false}
   >
     <LogMonitor theme="tomorrow" />
   </DockMonitor>,

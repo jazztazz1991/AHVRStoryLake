@@ -35,20 +35,9 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components|public\/)/,
         loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'es2017'],
-        },
       },
       {
-        test: /\.js?$/,
-        exclude: /(node_modules|bower_components|public\/)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'es2017'],
-        },
-      },
-      {
-        test: /\.css?$/,
+        test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: 'css-loader',
